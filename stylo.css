@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: url(imagenes/main_image_star-forming_region_carina_nircam_final-5mb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ overflow: hidden;
+
+}
+
+.contenedor{
+  height: 100%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.circulo{
+    height: 1000px;
+    width: 1000px;
+    background-color: #FFF176;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+display: flex;
+justify-content: center;
+    opacity: 0.8; 
+     filter: drop-shadow(0 -1mm 10mm rgb(64, 196, 255));
+
+}
+.circulo:hover{
+    height: 1100px;
+    width: 1100px;
+    animation-name: cambiar-color-tamanio;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+.gilda{
+    position: relative;
+    z-index: 2;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+}  
+ .rosas{
+  position: absolute;
+  z-index: 3;
+  top:75%;
+  
+  }
+ .rosa{
+  filter: drop-shadow(0 -1mm 10mm rgb(13, 189, 121));
+ }
+#rosa1{
+  position: relative;
+  z-index: 2;
+  left: 10%;
+  bottom: 50px;
+}
+#rosa2{
+  position: relative;
+  z-index: 1;
+  left: 5%;
+  top: 35px;
+}
+#rosa3{
+  position: relative;
+  z-index: 2;
+  top: 60px;
+}
+#rosa4{
+  position: relative;
+  z-index: 1;
+  right: 5%;
+  top: 35px;
+}
+#rosa5{
+  position: relative;
+  z-index: 2;
+  right: 10%;
+  bottom: 50px;
+}
+
+
+@keyframes cambiar-color-tamanio{
+  0%{
+        transform:scale(1);
+        background-color: #FDD835
+  }
+  10%{
+    transform: scale(1.1);
+    background-color: #FBC02D;
+  }
+  20%{
+    transform: scale(1.2);
+    background-color: #F9A825;
+
+  }
+  30%{
+    transform: scale(1.3);
+background-color: #c37a43;
+  }
+    }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .rosas{
+    position: absolute;
+    z-index: 3;
+    top:75%;
+  }
+    
+  .rosa{
+    height: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 320px) {
+  .rosa{
+    height: 15px
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 480px) {
+  .rosa{
+    height: 60px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+  .rosa{
+    height: 120px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+  .rosa{
+    height: auto;
+  }
+}
