@@ -5,7 +5,7 @@
 body{
   background-image: url(imagenes/main_image_star-forming_region_carina_nircam_final-5mb.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
  overflow: hidden;
 
 }
@@ -109,43 +109,223 @@ background-color: #c37a43;
     }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .rosas{
-    position: absolute;
-    z-index: 3;
-    top:75%;
-  }
-    
-  .rosa{
-    height: auto;
-  }
-}
+/* ExtraSmall devices  */
+
+   
+    @media only screen and (max-width: 220px) {
+      .circulo{
+        height: 200px;
+        width: 200px;
+      }
+      .gilda{
+        height: 100px;
+      }
+      .rosa{
+        height: 30px
+      }
+      #rosa1{
+        position: relative;
+        z-index: 2;
+        left: 10%;
+        bottom: 10px;
+      }
+      #rosa2{
+        position: relative;
+        z-index: 1;
+        left: 5%;
+        top: 5px;
+      }
+      #rosa3{
+        position: relative;
+        z-index: 2;
+        top: 25px;
+      }
+      #rosa4{
+        position: relative;
+        z-index: 1;
+        right: 5%;
+        top:5px;
+      }
+      #rosa5{
+        position: relative;
+        z-index: 2;
+        right: 10%;
+        bottom:10px;
+      }
+    }
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
+  .circulo{
+    height: 300px;
+    width: 300px;
+  }
+  .gilda{
+    height: 200px;
+  }
   .rosa{
-    height: 15px
+    height: 50px
+  }
+  #rosa1{
+    position: relative;
+    z-index: 2;
+    left: 10%;
+    bottom: 20px;
+  }
+  #rosa2{
+    position: relative;
+    z-index: 1;
+    left: 5%;
+    top: 10px;
+  }
+  #rosa3{
+    position: relative;
+    z-index: 2;
+    top: 30px;
+  }
+  #rosa4{
+    position: relative;
+    z-index: 1;
+    right: 5%;
+    top:10px;
+  }
+  #rosa5{
+    position: relative;
+    z-index: 2;
+    right: 10%;
+    bottom:20px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 480px) {
+  .circulo{
+    height: 500px;
+    width: 500px;
+  }
+  .gilda{
+    height: 400px;
+  }
+
   .rosa{
-    height: 60px;
+    height: 70px;
+  }
+  #rosa1{
+    position: relative;
+    z-index: 2;
+    left: 10%;
+    bottom: 35px;
+  }
+  #rosa2{
+    position: relative;
+    z-index: 1;
+    left: 5%;
+    top: 20px;
+  }
+  #rosa3{
+    position: relative;
+    z-index: 2;
+    top: 45px;
+  }
+  #rosa4{
+    position: relative;
+    z-index: 1;
+    right: 5%;
+    top:20px;
+  }
+  #rosa5{
+    position: relative;
+    z-index: 2;
+    right: 10%;
+    bottom:35px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
-  .rosa{
-    height: 120px;
+  .circulo{
+    height: 750px;
+    width: 750px;
   }
+  .gilda{
+    height: 600px;
+  }
+  .rosa{
+    height: 140px;
+  }
+  #rosa1{
+    position: relative;
+    z-index: 2;
+    left: 10%;
+    bottom: 35px;
+  }
+  #rosa2{
+    position: relative;
+    z-index: 1;
+    left: 5%;
+    top: 20px;
+  }
+  #rosa3{
+    position: relative;
+    z-index: 2;
+    top: 45px;
+  }
+  #rosa4{
+    position: relative;
+    z-index: 1;
+    right: 5%;
+    top:20px;
+  }
+  #rosa5{
+    position: relative;
+    z-index: 2;
+    right: 10%;
+    bottom:35px;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1024px) {
+  .circulo{
+    height: 850px;
+    width: 850px;
+  }
+  .gilda{
+    height: 750px;
+  }
   .rosa{
-    height: auto;
+    height: 200px;
+  }
+  #rosa1{
+    position: relative;
+    z-index: 2;
+    left: 10%;
+    bottom: 40px;
+  }
+  #rosa2{
+    position: relative;
+    z-index: 1;
+    left: 5%;
+    top: 25px;
+  }
+  #rosa3{
+    position: relative;
+    z-index: 2;
+    top: 50px;
+  }
+  #rosa4{
+    position: relative;
+    z-index: 1;
+    right: 5%;
+    top:25px;
+  }
+  #rosa5{
+    position: relative;
+    z-index: 2;
+    right: 10%;
+    bottom:40px;
   }
 }
