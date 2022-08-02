@@ -2,20 +2,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-  background-image: url(imagenes/main_image_star-forming_region_carina_nircam_final-5mb.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
- overflow: hidden;
 
-}
 
 .contenedor{
-  height: 100%;
-    display: flex;
-justify-content: center;
-align-items: center;
-}
+  height: 100vh;
+  background-image: url(imagenes/main_image_star-forming_region_carina_nircam_final-5mb.jpg);
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
 
 .circulo{
     height: 1000px;
@@ -24,9 +23,11 @@ align-items: center;
     border-radius: 100%;
     position: absolute;
     z-index: 1;
+    bottom: 5%;
 display: flex;
 justify-content: center;
-    opacity: 0.8; 
+align-items: center;
+    opacity: 0.6; 
      filter: drop-shadow(0 -1mm 10mm rgb(64, 196, 255));
 
 }
@@ -45,18 +46,26 @@ justify-content: center;
     z-index: 2;
     height: 800px;
     display: flex;
+    bottom: 5%;
     justify-content: center;
     bottom: 5%;
 }  
  .rosas{
   position: absolute;
   z-index: 3;
-  top:75%;
+  top:70%;
   
   }
+ 
  .rosa{
-  filter: drop-shadow(0 -1mm 10mm rgb(13, 189, 121));
+  filter: drop-shadow(0 -1mm 10mm rgb(64, 196, 255));
+  height: 10vh;
  }
+
+ .rosa:hover{
+  filter: drop-shadow(0 -1mm 10mm rgb(235, 216, 12));
+height:15vh;
+}
 #rosa1{
   position: relative;
   z-index: 2;
@@ -120,8 +129,9 @@ background-color: #c37a43;
       .gilda{
         height: 100px;
       }
+      
       .rosa{
-        height: 10px
+        height: 60px
       }
       #rosa1{
         position: relative;
@@ -157,13 +167,13 @@ background-color: #c37a43;
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 3060px) {
   .circulo{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
   .gilda{
-    height: 200px;
+    height: 150px;
   }
   .rosa{
     height: 30px
@@ -296,6 +306,7 @@ background-color: #c37a43;
   .gilda{
     height: 750px;
   }
+ 
   .rosa{
     height: 200px;
   }
@@ -328,4 +339,7 @@ background-color: #c37a43;
     right: 10%;
     bottom:40px;
   }
+}
+@media only screen and (min-width: 1200px) {
+
 }
