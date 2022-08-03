@@ -2,31 +2,34 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
-.contenedor{
-  height: 100vh;
+body{
   background-image: url(imagenes/main_image_star-forming_region_carina_nircam_final-5mb.jpg);
-  display: flex;
-  justify-content: center;
   background-position: center;
   align-items: center;
   background-attachment: fixed;
   background-size: cover;
+  overflow: scroll;
+}
+
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   }
 
 
 .circulo{
-    height: 1000px;
-    width: 1000px;
+    height: 100vh;
+    width: 100vh;
     background-color: #FFF176;
     border-radius: 100%;
     position: absolute;
     z-index: 1;
-    bottom: 5%;
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0.6; 
      filter: drop-shadow(0 -1mm 10mm rgb(64, 196, 255));
 
@@ -44,22 +47,23 @@ align-items: center;
 .gilda{
     position: relative;
     z-index: 2;
-    height: 800px;
+    height: 80vh;
+    width: 80vh;
     display: flex;
     bottom: 5%;
     justify-content: center;
-    bottom: 5%;
+    
 }  
  .rosas{
   position: absolute;
   z-index: 3;
-  top:70%;
+  top:60%;
   
   }
  
  .rosa{
+  height: 15rem;
   filter: drop-shadow(0 -1mm 10mm rgb(64, 196, 255));
-  height: 10vh;
  }
 
  .rosa:hover{
@@ -69,17 +73,18 @@ height:15vh;
 #rosa1{
   position: relative;
   z-index: 2;
-  left: 10%;
-  bottom: 50px;
+  left: 17vh;
+  bottom: 8vh;
 }
 #rosa2{
   position: relative;
   z-index: 1;
   left: 5%;
-  top: 35px;
+  top: 6vh;
 }
 #rosa3{
   position: relative;
+  height: 35vh;
   z-index: 2;
   top: 60px;
 }
@@ -87,13 +92,13 @@ height:15vh;
   position: relative;
   z-index: 1;
   right: 5%;
-  top: 35px;
+  top: 6vh;
 }
 #rosa5{
   position: relative;
   z-index: 2;
-  right: 10%;
-  bottom: 50px;
+  right: 17vh;
+  bottom: 8vh;
 }
 
 
@@ -120,225 +125,29 @@ background-color: #c37a43;
 
 /* ExtraSmall devices  */
 
-   
     @media only screen and (max-width: 220px) {
-      .circulo{
-        height: 200px;
-        width: 200px;
-      }
-      .gilda{
-        height: 100px;
-      }
       
-      .rosa{
-        height: 60px
-      }
-      #rosa1{
-        position: relative;
-        z-index: 2;
-        left: 10%;
-        bottom: 10px;
-      }
-      #rosa2{
-        position: relative;
-        z-index: 1;
-        left: 5%;
-        top: 5px;
-      }
-      #rosa3{
-        position: relative;
-        z-index: 2;
-        top: 25px;
-      }
-      #rosa4{
-        position: relative;
-        z-index: 1;
-        right: 5%;
-        top:5px;
-      }
-      #rosa5{
-        position: relative;
-        z-index: 2;
-        right: 10%;
-        bottom:10px;
-      }
     }
 
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 3060px) {
-  .circulo{
-    height: 250px;
-    width: 250px;
-  }
-  .gilda{
-    height: 150px;
-  }
-  .rosa{
-    height: 30px
-  }
-  #rosa1{
-    position: relative;
-    z-index: 2;
-    left: 10%;
-    bottom: 20px;
-  }
-  #rosa2{
-    position: relative;
-    z-index: 1;
-    left: 5%;
-    top: 10px;
-  }
-  #rosa3{
-    position: relative;
-    z-index: 2;
-    top: 30px;
-  }
-  #rosa4{
-    position: relative;
-    z-index: 1;
-    right: 5%;
-    top:10px;
-  }
-  #rosa5{
-    position: relative;
-    z-index: 2;
-    right: 10%;
-    bottom:20px;
-  }
+@media only screen and (max-width: 360px) {
+  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 480px) {
-  .circulo{
-    height: 500px;
-    width: 500px;
-  }
-  .gilda{
-    height: 400px;
-  }
-
-  .rosa{
-    height: 70px;
-  }
-  #rosa1{
-    position: relative;
-    z-index: 2;
-    left: 10%;
-    bottom: 35px;
-  }
-  #rosa2{
-    position: relative;
-    z-index: 1;
-    left: 5%;
-    top: 20px;
-  }
-  #rosa3{
-    position: relative;
-    z-index: 2;
-    top: 45px;
-  }
-  #rosa4{
-    position: relative;
-    z-index: 1;
-    right: 5%;
-    top:20px;
-  }
-  #rosa5{
-    position: relative;
-    z-index: 2;
-    right: 10%;
-    bottom:35px;
-  }
+ 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
-  .circulo{
-    height: 750px;
-    width: 750px;
-  }
-  .gilda{
-    height: 600px;
-  }
-  .rosa{
-    height: 140px;
-  }
-  #rosa1{
-    position: relative;
-    z-index: 2;
-    left: 10%;
-    bottom: 35px;
-  }
-  #rosa2{
-    position: relative;
-    z-index: 1;
-    left: 5%;
-    top: 20px;
-  }
-  #rosa3{
-    position: relative;
-    z-index: 2;
-    top: 45px;
-  }
-  #rosa4{
-    position: relative;
-    z-index: 1;
-    right: 5%;
-    top:20px;
-  }
-  #rosa5{
-    position: relative;
-    z-index: 2;
-    right: 10%;
-    bottom:35px;
-  }
+ 
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1024px) {
-  .circulo{
-    height: 850px;
-    width: 850px;
-  }
-  .gilda{
-    height: 750px;
-  }
  
-  .rosa{
-    height: 200px;
-  }
-  #rosa1{
-    position: relative;
-    z-index: 2;
-    left: 10%;
-    bottom: 40px;
-  }
-  #rosa2{
-    position: relative;
-    z-index: 1;
-    left: 5%;
-    top: 25px;
-  }
-  #rosa3{
-    position: relative;
-    z-index: 2;
-    top: 50px;
-  }
-  #rosa4{
-    position: relative;
-    z-index: 1;
-    right: 5%;
-    top:25px;
-  }
-  #rosa5{
-    position: relative;
-    z-index: 2;
-    right: 10%;
-    bottom:40px;
-  }
 }
 @media only screen and (min-width: 1200px) {
 
